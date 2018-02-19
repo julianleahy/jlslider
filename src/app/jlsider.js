@@ -41,16 +41,21 @@ export default () => {
 
     // setup autoplay by default
     const autoPlay = () => {
+        // show progress bar
+        progressBar.css('display', 'block');
+        bar.animate(1);
         timerAutoPlay = setInterval(() => {
             transitionSlide();
+            bar.animate(1);
         }, autoPlaySpeed)
     }
     autoPlay();
 
     const transitionSlide = () => {
 
-        // reset interval incase contol clicked
+        // reset interval / bar incase contol clicked
         clearInterval(timerAutoPlay);
+        bar.set(0);
         autoPlay();
         
         slide.removeClass('active');
