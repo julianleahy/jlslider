@@ -37,6 +37,11 @@ export default () => {
     autoPlay();
 
     const transitionSlide = () => {
+
+        // reset interval incase contol clicked
+        clearInterval(timerAutoPlay);
+        autoPlay();
+        
         slide.removeClass('active');
         if (animateTo === 'next') {
             slider.animate({
