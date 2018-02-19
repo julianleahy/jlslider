@@ -1,4 +1,5 @@
 @import url('http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 
 html, body {
     width: 100%;
@@ -42,7 +43,7 @@ ul.jlsliderPanel > li#jlslide3 {
 
 /* CONTROL PANEL*/
 .jlsliderWrap .jlcontolPanel {
-    font-family: 'Ionicons';
+    
     position: absolute;
     bottom: 0;
     left: 0%;
@@ -56,6 +57,10 @@ ul.jlsliderPanel > li#jlslide3 {
         width: 50%;
         text-align: center;
 
+        #next {
+            margin: 0 20px;
+        }
+
         #prev::after {
             content: '\f124';
         }
@@ -63,11 +68,14 @@ ul.jlsliderPanel > li#jlslide3 {
         #next::after {
             content: '\f125';
         }
-        
-        #next {
-            margin: 0 20px;
-        }
 
-  
+        #counter {
+            font-family: 'Lato', sans-serif;
+        }
+        
     }
 }
+
+/* HELPER */
+
+.icon { font-family: 'Ionicons'}
