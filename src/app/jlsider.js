@@ -16,5 +16,14 @@ export default () => {
         slideCount = 1,
         animateTo = 'next';
 
+    // set width of panel based on number of slides   
+    slider.css({ 'min-width': panelWidth });
+
+    // adjust panel width when window is resized
+    $(window).resize(() => {
+        windowWidth = $(window).width();
+        slider.css({ 'min-width': panelWidth })
+    });
+
 
 }
