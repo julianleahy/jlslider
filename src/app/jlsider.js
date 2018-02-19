@@ -27,14 +27,39 @@ export default () => {
 
     // setup autoplay by default
     const autoPlay = () => {
-        timerAutoPlay = setInterval(()=> {
+        timerAutoPlay = setInterval(() => {
             transitionSlide();
         }, autoPlaySpeed)
-    } 
+    }
     autoPlay();
 
     const transitionSlide = () => {
-        
+        slide.removeClass('active');
+        if (animateTo === 'next') {
+            slider.animate({
+                left: `-${(windowWidth)}px`
+            }, transitionSpeed, () => {
+                // append first slide to the end of the panel to create a continuous loop
+                $('.jlslide:nth-child(1)').appendTo(slider);
+                // reset left position back to 0
+                slider.css({ left: 0 });
+                // add active class to next slide to trigger animation
+                $('.jlslide:nth-child(1)').addClass('active');
+            })
+            slideCount = (slideCount === numSlides) ? 1 : slideCount + 1;
+        } else {
+            $('.jlslide:last-child()').prependTo(slider);
+            // get position of 'new' first slide
+            slider.css({ left: `-${windowWidth}px` });
+            // animate it into view
+            slider.animate({ left: 0 }, transitionSpeed, () => {
+                // add active class to next slide to trigger animation
+                $('.jlslide:nth-child(1)').addClass('active');
+            });
+            slideCount = (slideCount === 1) ? numSlides : slideCount - 1;
+        }
+
+        console.log(slideCount);
     }
 
 
