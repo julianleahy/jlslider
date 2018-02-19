@@ -58,8 +58,7 @@ export default () => {
             });
             slideCount = (slideCount === 1) ? numSlides : slideCount - 1;
         }
-
-        console.log(slideCount);
+ 
     }
 
 
