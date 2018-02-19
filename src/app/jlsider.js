@@ -25,5 +25,17 @@ export default () => {
         slider.css({ 'min-width': panelWidth })
     });
 
+    // setup autoplay by default
+    const autoPlay = () => {
+        timerAutoPlay = setInterval(()=> {
+            transitionSlide();
+        }, autoPlaySpeed)
+    } 
+    autoPlay();
+
+    const transitionSlide = () => {
+        
+    }
+
 
 }
