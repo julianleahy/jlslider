@@ -1,4 +1,5 @@
 import 'styles/jlslider.scss'
+import ProgressBar from './progressbar';
 
 export default () => {
 
@@ -16,6 +17,15 @@ export default () => {
         timerAutoPlay = null,
         slideCount = 1,
         animateTo = 'next';
+
+    let bar = new ProgressBar.Line('#progress', {
+        color: '#666',
+        duration: autoPlaySpeed,
+        easing: 'easeInOut',
+        strokeWidth: 1,
+        trailWidth: 1,
+        trailColor: '#f4f4f4'
+    });
 
     // set width of panel based on number of slides   
     slider.css({ 'min-width': panelWidth });
