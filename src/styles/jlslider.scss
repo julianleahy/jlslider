@@ -79,3 +79,16 @@ ul.jlsliderPanel > li#jlslide3 {
 /* HELPER */
 
 .icon { font-family: 'Ionicons'}
+
+@media (min-width: 705px) {
+
+    .jlsliderWrap .jlcontolPanel {
+        width: 80%;
+        left: 10%;
+
+        .jlcontrols{
+            width: 30%;
+        }
+    }
+
+}
