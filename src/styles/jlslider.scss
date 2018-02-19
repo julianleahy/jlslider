@@ -6,7 +6,9 @@ html, body {
 .jlsliderWrap{
     position: relative;
     height: 100%;
-    
+    // hide extra slide
+    overflow: hidden;
+
     ul.jlsliderPanel{
         position: absolute;
         top: 0;
@@ -36,3 +38,24 @@ ul.jlsliderPanel > li#jlslide3 {
     background-image: url("~images/slide3.jpg");
 }
 
+/* CONTROL PANEL*/
+.jlsliderWrap .jlcontolPanel {
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    line-height: 70px;
+
+    .jlcontrols {
+        height: 100%;
+        width: 50%;
+        text-align: center;
+
+        #next {
+            margin: 0 20px;
+        }
+  
+    }
+}
