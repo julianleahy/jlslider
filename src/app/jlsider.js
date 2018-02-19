@@ -7,6 +7,7 @@ export default () => {
         slider = $('.jlsliderPanel'),
         slide = $('.jlslide'),
         slideView = $('#current'),
+        progressBar = $('.progress'),
         numSlides = slide.length,
         autoPlaySpeed = 5000,
         transitionSpeed = 500;
