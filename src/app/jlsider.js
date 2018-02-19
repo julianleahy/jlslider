@@ -71,5 +71,15 @@ export default () => {
         slideView.text(currentSlide);
     }
 
+    $('#prev').click(() => {
+        animateTo = 'prev';
+        transitionSlide();
+    })
+
+    $('#next').click(() => {
+        animateTo = 'next';
+        transitionSlide();
+    })
+
 
 }
