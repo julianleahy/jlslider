@@ -26,6 +26,8 @@ export default () => {
         slider.css({ 'min-width': panelWidth })
     });
 
+    $('#total').text(numSlides);
+
     // setup autoplay by default
     const autoPlay = () => {
         timerAutoPlay = setInterval(() => {
