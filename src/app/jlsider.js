@@ -5,6 +5,7 @@ export default () => {
     const
         slider = $('.jlsliderPanel'),
         slide = $('.jlslide'),
+        slideView = $('#current'),
         numSlides = slide.length,
         autoPlaySpeed = 5000,
         transitionSpeed = 500;
@@ -58,7 +59,14 @@ export default () => {
             });
             slideCount = (slideCount === 1) ? numSlides : slideCount - 1;
         }
+
+        slideCounter(slideCount);
  
+    }
+
+    // Display current slide number 
+    const slideCounter = (currentSlide = 1) => {
+        slideView.text(currentSlide);
     }
 
 
