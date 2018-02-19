@@ -1,0 +1,38 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.jlsliderWrap{
+    position: relative;
+    height: 100%;
+    
+    ul.jlsliderPanel{
+        position: absolute;
+        top: 0;
+        left: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        // display slides in a row
+        display: flex;
+        
+        li.jlslide{
+            width: 100vw;
+            background: center center no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+ul.jlsliderPanel > li#jlslide1 {
+    background-image: url("~images/slide1.jpg");
+}
+ul.jlsliderPanel > li#jlslide2 {
+    background-image: url("~images/slide2.jpg");
+}
+ul.jlsliderPanel > li#jlslide3 {
+    background-image: url("~images/slide3.jpg");
+}
+
