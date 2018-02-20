@@ -96,8 +96,9 @@ ul.jlsliderPanel > li#jlslide3 {
             display: inline-block;
             width: 20px;
             height: 20px;
-            border: 1px solid red;
+            border: 1px solid #ccc;
             overflow: hidden;
+            margin-right: 5px;
         }
 
         .numSprite{

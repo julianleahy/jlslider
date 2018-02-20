@@ -89,7 +89,12 @@ export default () => {
 
     // Display current slide number 
     const slideCounter = (currentSlide = 1) => {
-        slideView.text(currentSlide);
+        let offset = 3;
+        offset = offset + ((currentSlide -1) * 54);
+        $('.numSprite').animate({
+            'margin-left' : `-${offset}px`
+        })
+
     }
 
     $('#prev').click(() => {
