@@ -1,7 +1,7 @@
 {
-  "name": "custom-slider",
+  "name": "jlslider",
   "version": "1.0.0",
-  "description": "lightweight custom slider",
+  "description": "Responsive slider with progress bar",
   "main": "index.js",
   "browserslist": [
     "> 1%"
