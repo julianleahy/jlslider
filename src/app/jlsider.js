@@ -9,7 +9,7 @@ export default () => {
         slideView = $('#current'),
         progressBar = $('.progress'),
         numSlides = slide.length,
-        autoPlaySpeed = 5000,
+        autoPlaySpeed = 4000,
         transitionSpeed = 500;
 
     let
@@ -49,7 +49,7 @@ export default () => {
             bar.animate(1);
         }, autoPlaySpeed)
     }
-    //autoPlay();
+    autoPlay();
 
     const transitionSlide = () => {
 
