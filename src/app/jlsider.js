@@ -10,7 +10,7 @@ export default () => {
         progressBar = $('.progress'),
         numSlides = slide.length,
         autoPlaySpeed = 5000,
-        transitionSpeed = 500;
+        transitionSpeed = 700;
 
     let
         windowWidth = $(window).width(),
