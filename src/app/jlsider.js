@@ -62,7 +62,7 @@ export default () => {
         if (animateTo === 'next') {
             slider.animate({
                 left: `-${(windowWidth)}px`
-            }, transitionSpeed, () => {
+            }, transitionSpeed, "swing", () => {
                 // append first slide to the end of the panel to create a continuous loop
                 $('.jlslide:nth-child(1)').appendTo(slider);
                 // reset left position back to 0
@@ -76,7 +76,7 @@ export default () => {
             // get position of 'new' first slide
             slider.css({ left: `-${windowWidth}px` });
             // animate it into view
-            slider.animate({ left: 0 }, transitionSpeed, () => {
+            slider.animate({ left: 0 }, transitionSpeed, "swing", () => {
                 // add active class to next slide to trigger animation
                 $('.jlslide:nth-child(1)').addClass('active');
             });
