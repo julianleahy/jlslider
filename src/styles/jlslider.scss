@@ -89,6 +89,24 @@ ul.jlsliderPanel > li#jlslide3 {
         #counter {
             font-family: 'Lato', sans-serif;
         }
+
+        #current{
+            position: relative;
+            top: 5px;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 1px solid red;
+            overflow: hidden;
+        }
+
+        .numSprite{
+            position: relative;
+            top: 50%;
+            left: 50%;
+            height: 12px;
+            margin: -74px 0 0 -3px;
+        }
         
     }
 }
