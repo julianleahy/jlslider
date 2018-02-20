@@ -2,51 +2,68 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Lightweight Custom Slider</title>
-        <meta name="description" content="lightweight custom slider">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lightweight Custom Slider</title>
+    <meta name="description" content="lightweight custom slider">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="jlsliderWrap">
-            <div class="progress" id="progress"></div>
-            <ul class="jlsliderPanel">
-                <li class="jlslide active" id="jlslide1"></li>
-                <li class="jlslide" id="jlslide2"></li>
-                <li class="jlslide" id="jlslide3"></li>
-                <li class="jlslide" id="jlslide4"></li>
-                <li class="jlslide" id="jlslide5"></li>
-            </ul>
-            <!-- control panel -->
-            <div class="jlcontolPanel">
-                <div class="jlcontrols">
-                    <span class="icon" id="prev"></span>
-                    <span class="icon" id="next"></span>
-                    <span id="counter">
-                        <span id="current">
-                            <!-- note: max slides of sprites = 8 -->
-                            <img class="numSprite"  src=<%= require('./images/numbersprite.svg') %> />
-                        </span>of
-                        <span id="total"></span>
-                    </span>
-                </div>
+    <!-- Remove gitlink -->
+    <div class="git-wrap">
+        <div class="git-logo">
+            <i class="fab fa-github" id="github"></i>
+        </div>
+        <div class="git-hub">
+            <a href="https://github.com/julianleahy/custom-slider">View on GitHub</a>
+        </div>
+    </div>
+
+    <div class="jlsliderWrap">
+        <div class="progress" id="progress"></div>
+        <ul class="jlsliderPanel">
+            <li class="jlslide active" id="jlslide1"></li>
+            <li class="jlslide" id="jlslide2"></li>
+            <li class="jlslide" id="jlslide3"></li>
+            <li class="jlslide" id="jlslide4"></li>
+            <li class="jlslide" id="jlslide5"></li>
+        </ul>
+        <!-- control panel -->
+        <div class="jlcontolPanel">
+            <div class="jlcontrols">
+                <span class="icon" id="prev"></span>
+                <span class="icon" id="next"></span>
+                <span id="counter">
+                    <span id="current">
+                        <!-- note: max slides of sprites = 8 -->
+                        <img class="numSprite" src=<%=require( './images/numbersprite.svg') %> />
+                    </span>of
+                    <span id="total"></span>
+                </span>
             </div>
         </div>
+    </div>
 
-     
-       
-            
-       
 
-    </body>
+
+
+
+
+</body>
+
 </html>
