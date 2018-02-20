@@ -49,7 +49,7 @@ export default () => {
             bar.animate(1);
         }, autoPlaySpeed)
     }
-    autoPlay();
+    //autoPlay();
 
     const transitionSlide = () => {
 
